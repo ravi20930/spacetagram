@@ -1,19 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
 body {
   margin: 0;
 }
 
 .mainContainer {
-  margin-top: 20px;
+  margin-top: 100px;
   display: flex;
+  position: absolute;
   justify-content: center;
 }
 
-.headerBar {
+.panelEnd {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.headerItems {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  color: black;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-inline: 20%;
   height: 50px;
-  background-color: mediumslateblue;
+  background-color: white;
+}
+
+.buttonStyle {
+	padding: 5px;
+	font-size: 12px;
+	color: white;
+	border-style: hidden;
+	background-color: #5599ffff;
+	max-width: 100%;
+	min-width: 70px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-inline: 5px;
+	border-radius: 10px;
+}
+
+.buttonStyle:hover {
+	background-color: #003380ff;
+	transition: all 1s ease;
 }
 
 .photoCardLayout {
@@ -44,4 +81,12 @@ body {
 
 .cardView:hover{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+@media only screen and (max-width: 1100px) {
+
+	.headerItems {
+		font-size: 0px;
+		justify-content: center;
+	}
 }
