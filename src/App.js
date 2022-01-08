@@ -1,10 +1,12 @@
 import './App.css';
+import Home from '../src/components/Home';
 
 function App() {
   return (
-    <div>
-      haha
-    </div>
+    <>
+      <div className='headerBar'>spacetagram</div>
+      <Home />
+    </>
   );
 }
 
